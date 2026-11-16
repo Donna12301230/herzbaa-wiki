@@ -30,7 +30,8 @@ OFFICIAL_WORDS = ["致力於", "秉持", "打造", "賦能", "全方位", "一�
 
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
 PHONE_RE = re.compile(r"(?<!\d)(09\d{2}[-\s]?\d{3}[-\s]?\d{3}|0\d{1,2}[-\s]?\d{3,4}[-\s]?\d{4})(?!\d)")
-MONEY_RE = re.compile(r"(NT\$|新台幣|新臺幣|US\$|\$\s?\d|\d[\d,]*\s?(元|萬元|塊))")
+MONEY_RE = re.compile(r"(NT\$|新台幣|新臺幣|US\$|\$\s?\d|\d[\d,]*\s?(元|萬元|塊)|(分潤|抽成|分成|折扣|佣金)[^。
+]{0,6}\d+\s?%)")
 LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.S)
 
@@ -193,7 +194,7 @@ def main() -> int:
                 if m not in public_contacts:
                     errors.append(f"{name}:{i}：疑似電話「{m}」")
             if MONEY_RE.search(line):
-                errors.append(f"{name}:{i}：出現金額，對外一律寫「請洽創作者」")
+                errors.append(f"{name}:{i}：出現金額或分潤比例，對外一律寫「請洽創作者」")
             for term in private_terms:
                 if term in line:
                     errors.append(f"{name}:{i}：出現敏感詞（private_terms.txt 第 {private_terms.index(term) + 1} 個）")
