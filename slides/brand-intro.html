@@ -73,6 +73,10 @@
   .contact div{font-size:30px}
   .contact label{display:inline-block;width:190px;color:var(--muted);font-size:22px;letter-spacing:.1em}
   .cta{margin-top:30px;display:inline-block;background:var(--brown);color:var(--cream);font-size:24px;padding:14px 30px;border-radius:999px}
+  .cards.tight .card{padding:12px 20px}.cards.tight .card b{font-size:22px;margin-bottom:2px}
+  .awards.tight{gap:10px}.awards.tight .aw{padding:10px 24px}
+  .inset{position:absolute;left:22px;bottom:22px;width:46%;border:6px solid var(--paper);border-radius:10px;box-shadow:0 6px 20px rgba(60,35,15,.25)}
+  .photo-tag{position:absolute;right:16px;top:16px;background:rgba(251,247,240,.92);color:var(--brown);font-size:20px;font-weight:700;padding:6px 14px;border-radius:999px}
   #nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:9}
   #nav button{border:0;background:rgba(110,67,32,.85);color:#fff;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer}
   #nav button:focus-visible{outline:3px solid var(--pink)}
@@ -191,17 +195,19 @@
 
 <!-- 7 展覽空間 -->
 <section class="slide">
-  <div class="circle c-tl"></div>
-  <div class="inner">
+  <div class="split" style="grid-template-columns:1.2fr .8fr">
+  <div class="txt" style="padding-right:40px">
     <div class="kicker">FOR SHOPS ①</div>
     <h2>店家合作①：成為展覽空間</h2>
-    <p style="font-size:25px;margin:-10px 0 24px;color:var(--brown)">咖啡廳、書店、工作室，任何願意讓藝術走進來的空間都可以。</p>
-    <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+    <p style="font-size:24px;margin:-10px 0 20px;color:var(--brown)">咖啡廳、書店、工作室，任何願意讓藝術走進來的空間都可以。</p>
+    <div class="cards tight" style="grid-template-columns:1fr;gap:10px">
       <div class="card"><b>場地畫作布置</b><span>以一年為單位展出，周邊商品販售有分潤。</span></div>
       <div class="card"><b>產品開發</b><span>在地產品開發與聯名文創商品。</span></div>
       <div class="card"><b>觀展者優惠</b><span>VIP 卡兌換優惠，帶動人流與曝光。</span></div>
     </div>
-    <p class="note">不限台中；分潤比例與條件請洽創作者。</p>
+    <p class="note" style="margin-top:18px">不限台中；分潤比例與條件請洽創作者。</p>
+  </div>
+  <div class="pic"><img src="img/photo-cafe-wall.webp" alt="咖啡廳牆面掛滿赫滋與羊畫作的展覽現場"><span class="photo-tag">展覽現場</span></div>
   </div>
   <div class="src">資料來源：wiki／展覽空間合作</div>
 </section>
@@ -220,7 +226,7 @@
       <div class="quote" style="margin-top:20px;font-size:24px"><small>創作者原文</small>「生活路上，大人也需要休息，而咖啡廳，就是那個可以短暫喘口氣的地方。」</div>
       <p style="margin-top:18px;font-size:20px;color:var(--muted)">📍 高雄市旗山區仁和街 112 號</p>
     </div>
-    <div class="pic"><img src="img/kunkun.webp" alt="睏睏系列畫作：赫滋和羊裹著紅毯在時鐘中睡覺"></div>
+    <div class="pic"><img src="img/photo-kunkun-venue.webp" alt="仁和雅咖啡店內牆面展出的赫滋與羊作品"><img class="inset" src="img/kunkun.webp" alt="睏睏系列畫作：赫滋和羊裹著紅毯在時鐘中睡覺" style="width:52%;height:auto"><span class="photo-tag">仁和雅咖啡</span></div>
   </div>
   <div class="src">資料來源：wiki／睏睏創作展</div>
 </section>
@@ -232,14 +238,17 @@
     <div class="kicker">FOR SHOPS ②</div>
     <h2>店家合作②：地方文創系列</h2>
     <p style="font-size:26px;color:var(--brown)">把各地風景畫進周邊商品。</p>
-    <div class="route" aria-label="美濃 → 旗山 → 岡山 → 橋頭 → 新營">
+    <div class="route" style="margin:6px 0 22px" aria-label="美濃 → 旗山 → 岡山 → 橋頭 → 新營">
       <div class="stop"><i></i><b>美濃</b></div>
       <div class="stop"><i></i><b>旗山</b></div>
       <div class="stop"><i></i><b>岡山</b></div>
       <div class="stop"><i></i><b>橋頭</b></div>
       <div class="stop now"><i></i><b>新營</b></div>
     </div>
-    <div class="card" style="max-width:900px"><b>第五站新營</b><span>和刻度 COFFEE 聯名，三款咖啡包各畫一個新營地點。</span></div>
+    <div style="display:grid;grid-template-columns:330px 1fr;gap:24px;align-items:center">
+      <div class="card"><b>第五站新營</b><span>和刻度 COFFEE 聯名，三款咖啡包各畫一個新營地點。</span></div>
+      <img src="img/xinying-3packs.webp" alt="新營聯名咖啡包三款包裝插畫：深林之深、黑金配方、日初輕焙單品" style="width:100%;max-height:250px;object-fit:contain;object-position:left center;border-radius:12px">
+    </div>
   </div>
   <div class="src">資料來源：wiki／地方文創系列、刻度COFFEE</div>
 </section>
@@ -261,11 +270,11 @@
 
 <!-- 11 展覽獲獎 -->
 <section class="slide">
-  <div class="circle c-br"></div>
-  <div class="inner">
+  <div class="split" style="grid-template-columns:1.1fr .9fr">
+  <div class="txt">
     <div class="kicker">HIGHLIGHTS</div>
     <h2>展覽與獲獎精選</h2>
-    <div class="awards">
+    <div class="awards tight">
       <div class="aw"><em>2024</em><span>KYLA 插畫獎甲等</span></div>
       <div class="aw"><em>2024</em><span>POPUPASIA 全家好賣家插畫萌友入選</span></div>
       <div class="aw"><em>2024</em><span>中國國際動漫博覽會</span></div>
@@ -273,15 +282,18 @@
       <div class="aw"><em>2025</em><span>台灣卓越印刷設計展</span></div>
     </div>
   </div>
+  <div class="pic"><img src="img/photo-booth.webp" alt="赫滋與羊展位：牆上掛滿插畫，桌上擺放周邊商品"><span class="photo-tag">展位現場</span></div>
+  </div>
   <div class="src">資料來源：wiki／展覽與獲獎</div>
 </section>
 
 <!-- 12 服務 -->
 <section class="slide">
-  <div class="inner">
+  <div class="split" style="grid-template-columns:1.45fr .55fr">
+  <div class="txt" style="padding-right:36px">
     <div class="kicker">SERVICES</div>
     <h2>我們能提供什麼</h2>
-    <div class="svc">
+    <div class="svc" style="grid-template-columns:repeat(2,1fr);gap:12px">
       <div class="card"><b>插畫設計</b><span>客製插畫、品牌角色、視覺識別</span></div>
       <div class="card"><b>繪本創作</b><span>故事腳本、插圖繪製、裝幀設計</span></div>
       <div class="card"><b>美術展覽</b><span>策展規劃、空間陳設、藝術活動</span></div>
@@ -289,7 +301,9 @@
       <div class="card"><b>全端工程</b><span>前後端開發、API 串接、資料庫</span></div>
       <div class="card"><b>異業合作</b><span>品牌合作、聯名企劃、形象塑造</span></div>
     </div>
-    <p class="note">創辦人臺藝大雕塑系出身，也具備全端工程能力。</p>
+    <p class="note" style="margin-top:18px">創辦人臺藝大雕塑系出身，也具備全端工程能力。</p>
+  </div>
+  <div class="pic"><img src="img/photo-coasters.webp" alt="赫滋與羊插畫杯墊周邊商品"></div>
   </div>
   <div class="src">資料來源：wiki／服務項目、創辦人</div>
 </section>
