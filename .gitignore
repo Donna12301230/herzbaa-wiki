@@ -1,0 +1,4 @@
+# 本機敏感詞清單（不進 git）
+tools/private_terms.txt
+__pycache__/
+.obsidian/
