@@ -75,6 +75,7 @@
   .cta{margin-top:30px;display:inline-block;background:var(--brown);color:var(--cream);font-size:24px;padding:14px 30px;border-radius:999px}
   .cards.tight .card{padding:12px 20px}.cards.tight .card b{font-size:22px;margin-bottom:2px}
   .awards.tight{gap:10px}.awards.tight .aw{padding:10px 24px}
+  .route.r2{margin:14px 0 22px;align-items:flex-start}.route.r2::before{left:30px;right:30px;top:24px}.route.r2 .stop{width:120px}.route.r2 .stop i{width:50px;height:50px;margin-bottom:8px}.route.r2 .stop i::after{width:16px;height:16px}.route.r2 .stop b{font-size:24px;display:block}.route.r2 .stop span{display:block;font-size:20px;line-height:1.35;color:var(--muted);margin-top:4px}
   .inset{position:absolute;left:22px;bottom:22px;width:46%;border:6px solid var(--paper);border-radius:10px;box-shadow:0 6px 20px rgba(60,35,15,.25)}
   .photo-tag{position:absolute;right:16px;top:16px;background:rgba(251,247,240,.92);color:var(--brown);font-size:20px;font-weight:700;padding:6px 14px;border-radius:999px}
   #nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:9}
@@ -234,22 +235,24 @@
 
 <!-- 9 地方文創 -->
 <section class="slide">
-  <div class="circle c-br"></div>
-  <div class="inner">
+  <div class="split" style="grid-template-columns:1fr 430px">
+  <div class="txt" style="padding-right:36px">
     <div class="kicker">FOR SHOPS ②</div>
-    <h2>店家合作②：地方文創系列</h2>
-    <p style="font-size:26px;color:var(--brown)">把各地風景畫進周邊商品。</p>
-    <div class="route" style="margin:6px 0 22px" aria-label="美濃 → 旗山 → 岡山 → 橋頭 → 新營">
-      <div class="stop"><i></i><b>美濃</b></div>
-      <div class="stop"><i></i><b>旗山</b></div>
-      <div class="stop"><i></i><b>岡山</b></div>
-      <div class="stop"><i></i><b>橋頭</b></div>
-      <div class="stop now"><i></i><b>新營</b></div>
+    <h2 style="font-size:42px;margin-bottom:14px">店家合作②：地方文創系列</h2>
+    <p style="font-size:24px;color:var(--brown)">把各地風景畫進周邊商品。</p>
+    <div class="route r2" aria-label="美濃 → 旗山 → 岡山 → 橋頭 → 新營">
+      <div class="stop"><i></i><b>美濃</b><span>GA.B Cafe</span></div>
+      <div class="stop"><i></i><b>旗山</b><span>仁和雅咖啡<br>金旗山城</span></div>
+      <div class="stop"><i></i><b>岡山</b><span>源順昌本舖</span></div>
+      <div class="stop"><i></i><b>橋頭</b><span>三希典藏</span></div>
+      <div class="stop now"><i></i><b>新營</b><span>刻度 COFFEE</span></div>
     </div>
-    <div style="display:grid;grid-template-columns:330px 1fr;gap:24px;align-items:center">
+    <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:18px;align-items:center">
       <div class="card"><b>第五站新營</b><span>和刻度 COFFEE 聯名，三款咖啡包各畫一個新營地點。</span></div>
-      <img src="img/xinying-3packs.webp" alt="新營聯名咖啡包三款包裝插畫：深林之深、黑金配方、日初輕焙單品" style="width:100%;max-height:250px;object-fit:contain;object-position:left center;border-radius:12px">
+      <img src="img/xinying-3packs.webp" alt="新營聯名咖啡包三款包裝插畫：深林之深、黑金配方、日初輕焙單品" style="width:100%;border-radius:10px">
     </div>
+  </div>
+  <div class="pic" style="background:#FBF5EC"><img src="img/regional-poster.webp" alt="赫滋與羊地方文創周邊海報：美濃、旗山、岡山、橋頭四站的插畫、商品與店家" style="object-fit:contain"></div>
   </div>
   <div class="src">資料來源：wiki／地方文創系列、刻度COFFEE</div>
 </section>
