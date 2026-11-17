@@ -119,3 +119,9 @@ updated: 2026-11-16
 
 - 使用者指示：店名統一用「刻度咖啡」（IG 貼文與包裝上都有這個寫法）。
 - 實體頁改名 [[刻度咖啡]]，所有連結、簡報與逐頁稿跟著改；keywords 保留「刻度COFFEE」「刻度 COFFEE」方便檢索。raw 照原文不動。
+
+## [2026-11-17] decision | 推上 GitHub
+
+- 使用者指示建 repo 並推上去：https://github.com/Donna12301230/herzbaa-wiki （公開）
+- GitHub Pages：https://donna12301230.github.io/herzbaa-wiki/slides/brand-intro.html
+- 推之前檢查：追蹤檔案裡只有品牌官方 Email／電話與合作店家公開電話；沒有學號、合約、稅務資料；tools/private_terms.txt 不進 git。

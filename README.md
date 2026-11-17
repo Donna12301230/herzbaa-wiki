@@ -10,7 +10,7 @@
 
 | 成品 | 連結 |
 |---|---|
-| 教學簡報（14 頁，給新合作夥伴／店家） | [slides/brand-intro.html](slides/brand-intro.html)（GitHub Pages 版：〔推上後填入〕） |
+| 教學簡報（14 頁，給新合作夥伴／店家） | [slides/brand-intro.html](slides/brand-intro.html)（線上版：https://donna12301230.github.io/herzbaa-wiki/slides/brand-intro.html） |
 | 簡報檢查報告 | [slides/檢查報告.md](slides/檢查報告.md) |
 | 簡報流程（Graph，含流程圖） | [workflows/brand-slides.md](workflows/brand-slides.md) |
 
