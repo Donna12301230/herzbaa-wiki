@@ -125,3 +125,8 @@ updated: 2026-11-16
 - 使用者指示建 repo 並推上去：https://github.com/Donna12301230/herzbaa-wiki （公開）
 - GitHub Pages：https://donna12301230.github.io/herzbaa-wiki/slides/brand-intro.html
 - 推之前檢查：追蹤檔案裡只有品牌官方 Email／電話與合作店家公開電話；沒有學號、合約、稅務資料；tools/private_terms.txt 不進 git。
+
+## [2026-11-17] query | 驗收題組重測（前後對照）
+
+- 同樣 12 題重測：通過 6 → 7、部分 4 → 3、答不出 2 → 2；陷阱＋界線 3/3；編造 0。結果見 docs/query測試紀錄.md 第二次。
+- 重測前修正：[[合作問答]] 電話改標「品牌官方電話（不是個人手機）」；[[src-ig-2025-11-27-kunkun]] 過時的「地址不寫進 wiki」說明更新。

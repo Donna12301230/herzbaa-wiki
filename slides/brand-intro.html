@@ -76,12 +76,19 @@
   .cards.tight .card{padding:12px 20px}.cards.tight .card b{font-size:22px;margin-bottom:2px}
   .awards.tight{gap:10px}.awards.tight .aw{padding:10px 24px}
   .route.r2{margin:14px 0 22px;align-items:flex-start}.route.r2::before{left:30px;right:30px;top:24px}.route.r2 .stop{width:120px}.route.r2 .stop i{width:50px;height:50px;margin-bottom:8px}.route.r2 .stop i::after{width:16px;height:16px}.route.r2 .stop b{font-size:24px;display:block}.route.r2 .stop span{display:block;font-size:20px;line-height:1.35;color:var(--muted);margin-top:4px}
-  .agenda{list-style:none;counter-reset:a;display:flex;flex-direction:column;gap:14px;max-width:980px}
-  .agenda li{counter-increment:a;display:grid;grid-template-columns:64px 250px 1fr 90px;align-items:center;gap:20px;background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:12px 24px}
+  .goal{font-size:24px;color:var(--brown);background:var(--peach-2);display:inline-block;padding:8px 18px;border-radius:12px;margin-bottom:18px}
+  .agenda{list-style:none;counter-reset:a;display:flex;flex-direction:column;gap:10px;max-width:980px}
+  .agenda li{counter-increment:a;display:grid;grid-template-columns:64px 250px 1fr 90px;align-items:center;gap:20px;background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:7px 24px}
   .agenda li::before{content:counter(a);width:48px;height:48px;border-radius:50%;background:var(--peach);display:grid;place-items:center;font-weight:900;font-size:22px;color:var(--brown)}
   .agenda b{font-size:30px;font-weight:900}
   .agenda span{font-size:24px;color:var(--muted)}
   .agenda li::after{content:"P." attr(data-p);font-size:20px;color:var(--brown-2);font-weight:700;text-align:right}
+  .tags.sm{gap:8px;margin-bottom:16px}.tags.sm .tag{font-size:20px;padding:5px 16px}
+  .awards.sm{gap:8px}.awards.sm .aw{grid-template-columns:80px 1fr;padding:4px 20px;gap:14px}.awards.sm .aw em{font-size:23px}.awards.sm .aw span{font-size:21px}
+  .recap{display:flex;flex-direction:column;gap:14px;max-width:1000px}
+  .rc{display:flex;align-items:center;gap:24px;background:var(--paper);border:2px solid var(--line);border-radius:20px;padding:12px 28px}
+  .rc i{flex:none;width:56px;height:56px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:900;font-size:26px}
+  .rc span{font-size:30px;font-weight:700}
   .inset{position:absolute;left:22px;bottom:22px;width:46%;border:6px solid var(--paper);border-radius:10px;box-shadow:0 6px 20px rgba(60,35,15,.25)}
   .photo-tag{position:absolute;right:16px;top:16px;background:rgba(251,247,240,.92);color:var(--brown);font-size:20px;font-weight:700;padding:6px 14px;border-radius:999px}
   #nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:9}
@@ -117,13 +124,14 @@
   <div class="circle c-br"></div>
   <div class="inner">
     <div class="kicker">AGENDA</div>
-    <h2>今天會講什麼</h2>
+    <h2 style="margin-bottom:12px">今天會講什麼</h2>
+    <p class="goal">看完你會知道：赫滋與羊是誰、店家有哪兩種合作方式、怎麼聯絡我們。</p>
     <ol class="agenda">
       <li data-p="03–04"><b>我們是誰</b><span>品牌與故事</span></li>
       <li data-p="05–07"><b>我們怎麼做</b><span>聽故事・畫故事・展故事</span></li>
       <li data-p="08–10"><b>店家怎麼合作</b><span>展覽空間、地方文創</span></li>
-      <li data-p="11–13"><b>做過什麼</b><span>夥伴、展覽、服務</span></li>
-      <li data-p="14"><b>一起合作</b><span>聯絡方式</span></li>
+      <li data-p="11–12"><b>做過什麼</b><span>夥伴、展覽、服務</span></li>
+      <li data-p="13–14"><b>一起合作</b><span>重點回顧、聯絡方式</span></li>
     </ol>
   </div>
   <div class="src">簡報結構</div>
@@ -277,43 +285,31 @@
   <div class="src">資料來源：wiki／地方文創系列、刻度咖啡</div>
 </section>
 
-<!-- 10 夥伴 -->
+<!-- 11 夥伴與成績 -->
 <section class="slide">
   <div class="split" style="grid-template-columns:1fr 576px">
   <div class="txt">
     <div class="circle c-tl" style="left:-210px;top:-200px"></div>
     <div style="position:relative;z-index:1">
-    <div class="kicker">PARTNERS</div>
-    <h2>合作過的夥伴</h2>
-    <div class="tags">
+    <div class="kicker">PARTNERS &amp; HIGHLIGHTS</div>
+    <h2 style="font-size:40px;margin-bottom:16px">合作夥伴與展覽成績</h2>
+    <div class="tags sm">
       <span class="tag">全家</span><span class="tag">遠傳</span><span class="tag">婚禮似顏繪</span>
       <span class="tag">拍貼機</span><span class="tag">茶行</span><span class="tag">咖啡廳</span>
       <span class="tag hi">Podcast 日更聚場</span><span class="tag hi">書法家樂墨書法</span><span class="tag hi">在地咖啡店刻度咖啡</span>
     </div>
-    </div>
-  </div>
-  <div class="pic"><img src="img/xinying-promo.webp" alt="刻度咖啡×赫滋與羊 新營聯名插畫咖啡包宣傳圖：深林之深、黑金配方、日初輕焙單品" style="object-position:center top"></div>
-  </div>
-  <div class="src">資料來源：wiki／異業合作、日更聚場、刻度咖啡</div>
-</section>
-
-<!-- 11 展覽獲獎 -->
-<section class="slide">
-  <div class="split" style="grid-template-columns:1.1fr .9fr">
-  <div class="txt">
-    <div class="kicker">HIGHLIGHTS</div>
-    <h2>展覽與獲獎精選</h2>
-    <div class="awards tight">
+    <div class="awards sm">
       <div class="aw"><em>2024</em><span>KYLA 插畫獎甲等</span></div>
       <div class="aw"><em>2024</em><span>POPUPASIA 全家好賣家插畫萌友入選</span></div>
       <div class="aw"><em>2024</em><span>中國國際動漫博覽會</span></div>
       <div class="aw"><em>2025</em><span>WHATZ 國際當代藝術博覽會</span></div>
       <div class="aw"><em>2025</em><span>台灣卓越印刷設計展</span></div>
     </div>
+    </div>
   </div>
-  <div class="pic"><img src="img/photo-booth.webp" alt="赫滋與羊展位：牆上掛滿插畫，桌上擺放周邊商品"><span class="photo-tag">展位現場</span></div>
+  <div class="pic"><img src="img/xinying-promo.webp" alt="刻度咖啡×赫滋與羊 新營聯名插畫咖啡包宣傳圖：深林之深、黑金配方、日初輕焙單品" style="object-position:center top"></div>
   </div>
-  <div class="src">資料來源：wiki／展覽與獲獎</div>
+  <div class="src">資料來源：wiki／異業合作、日更聚場、刻度咖啡、展覽與獲獎</div>
 </section>
 
 <!-- 12 服務 -->
@@ -335,6 +331,22 @@
   <div class="pic"><img src="img/photo-coasters.webp" alt="赫滋與羊插畫杯墊周邊商品"></div>
   </div>
   <div class="src">資料來源：wiki／服務項目、創辦人</div>
+</section>
+
+<!-- 13 重點回顧 -->
+<section class="slide">
+  <div class="circle c-br"></div>
+  <div class="inner">
+    <div class="kicker">RECAP</div>
+    <h2>重點回顧</h2>
+    <div class="recap">
+      <div class="rc"><i>1</i><span>赫滋與羊用插畫連結人與地方。</span></div>
+      <div class="rc"><i>2</i><span>我們的方法：聽故事・畫故事・展故事。</span></div>
+      <div class="rc"><i>3</i><span>店家可以成為展覽空間，或一起做地方文創周邊。</span></div>
+      <div class="rc"><i>4</i><span>合作條件與價格，請洽創作者。</span></div>
+    </div>
+  </div>
+  <div class="src">資料來源：wiki／赫滋與羊、聽故事畫故事展故事、展覽空間合作、地方文創系列、合作問答</div>
 </section>
 
 <!-- 13 聯絡 -->
