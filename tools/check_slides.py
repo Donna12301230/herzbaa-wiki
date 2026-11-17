@@ -25,7 +25,7 @@ from lint import EMAIL_RE, PHONE_RE, MONEY_RE, read_list_file  # noqa: E402
 
 SRC_RE = re.compile(r"〔([^〕]+)〕\s*$")
 QUOTE_RE = re.compile(r"「(.+?)」")
-META_SOURCE = "簡報標題"  # 只允許用在第 1 頁的副標
+META_SOURCE = "簡報結構"  # 只允許用在第 1 頁（封面副標）與第 2 頁（目錄），不是事實陳述
 
 
 def load_pages():
@@ -67,7 +67,7 @@ def main():
         body = line[2:m.start()]
         cited = [s.strip() for s in re.split(r"[、,]", m.group(1))]
         for s in cited:
-            if s == META_SOURCE and page_no == 1:
+            if s == META_SOURCE and page_no in (1, 2):
                 continue
             if s not in pages:
                 errors.append(f"{where}：出處「{s}」不是 wiki 頁")

@@ -76,6 +76,12 @@
   .cards.tight .card{padding:12px 20px}.cards.tight .card b{font-size:22px;margin-bottom:2px}
   .awards.tight{gap:10px}.awards.tight .aw{padding:10px 24px}
   .route.r2{margin:14px 0 22px;align-items:flex-start}.route.r2::before{left:30px;right:30px;top:24px}.route.r2 .stop{width:120px}.route.r2 .stop i{width:50px;height:50px;margin-bottom:8px}.route.r2 .stop i::after{width:16px;height:16px}.route.r2 .stop b{font-size:24px;display:block}.route.r2 .stop span{display:block;font-size:20px;line-height:1.35;color:var(--muted);margin-top:4px}
+  .agenda{list-style:none;counter-reset:a;display:flex;flex-direction:column;gap:14px;max-width:980px}
+  .agenda li{counter-increment:a;display:grid;grid-template-columns:64px 250px 1fr 90px;align-items:center;gap:20px;background:var(--paper);border:2px solid var(--line);border-radius:18px;padding:12px 24px}
+  .agenda li::before{content:counter(a);width:48px;height:48px;border-radius:50%;background:var(--peach);display:grid;place-items:center;font-weight:900;font-size:22px;color:var(--brown)}
+  .agenda b{font-size:30px;font-weight:900}
+  .agenda span{font-size:24px;color:var(--muted)}
+  .agenda li::after{content:"P." attr(data-p);font-size:20px;color:var(--brown-2);font-weight:700;text-align:right}
   .inset{position:absolute;left:22px;bottom:22px;width:46%;border:6px solid var(--paper);border-radius:10px;box-shadow:0 6px 20px rgba(60,35,15,.25)}
   .photo-tag{position:absolute;right:16px;top:16px;background:rgba(251,247,240,.92);color:var(--brown);font-size:20px;font-weight:700;padding:6px 14px;border-radius:999px}
   #nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:9}
@@ -104,6 +110,23 @@
     <div class="pic contain" style="background:#F9EAE1"><img src="img/herz-logo.webp" alt="赫滋趴在羊背上的插畫與赫滋與羊 HerzBaa 字樣"></div>
   </div>
   <div class="src">資料來源：wiki／赫滋與羊</div>
+</section>
+
+<!-- 2 目錄 -->
+<section class="slide">
+  <div class="circle c-br"></div>
+  <div class="inner">
+    <div class="kicker">AGENDA</div>
+    <h2>今天會講什麼</h2>
+    <ol class="agenda">
+      <li data-p="03–04"><b>我們是誰</b><span>品牌與故事</span></li>
+      <li data-p="05–07"><b>我們怎麼做</b><span>聽故事・畫故事・展故事</span></li>
+      <li data-p="08–10"><b>店家怎麼合作</b><span>展覽空間、地方文創</span></li>
+      <li data-p="11–13"><b>做過什麼</b><span>夥伴、展覽、服務</span></li>
+      <li data-p="14"><b>一起合作</b><span>聯絡方式</span></li>
+    </ol>
+  </div>
+  <div class="src">簡報結構</div>
 </section>
 
 <!-- 2 我們是誰 -->
