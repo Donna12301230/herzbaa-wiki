@@ -16,7 +16,7 @@
 ## 流程圖
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[① 查 Wiki<br/>讀 index → 挑 public 頁] --> B{② 覆蓋率關卡<br/>每個必要主題都有頁?}
     B -- 缺主題 --> A2[回報缺口<br/>補 ingest 或刪主題]
     A2 --> A
